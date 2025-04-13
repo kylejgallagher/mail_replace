@@ -4,7 +4,7 @@ with open("Input/Names/invited_names.txt") as names:
 print(content)
 
 for names in content:
-    with open(f"Output/ReadyToSend/{names}", mode='w') as letter:
+    with open(f"Output/ReadyToSend/letter_for_{names}", mode='w') as letter:
         with open('Input/Letters/starting_letter.txt') as template:
             letter_content = template.read()
         letter.write(letter_content.replace('[name]', names))
