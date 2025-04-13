@@ -8,4 +8,4 @@ for names in content:
         with open('Input/Letters/starting_letter.txt') as template:
             letter_content = template.read()
         letter.write(letter_content.replace('[name]', names))
-        # name_inserted = letter_content.replace('[name]', names)
+
